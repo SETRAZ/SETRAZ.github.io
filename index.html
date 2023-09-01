@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <title>Sai Hemanth</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body
+    style="
+      background-image: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.75),
+          rgba(255, 255, 255, 0.75)
+        ),
+        url(assets/images/background4.gif);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    "
+  >
+
+      <div
+        class="container"
+        id="hero"
+      >
+        <img id="v" src="assets/gif/V.gif" alt="" />
+
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <img
+            id="name"
+            src="assets/images/name.png"
+            alt=""
+          />
+          <button type="button" class="nes-btn is-primary" onclick="window.location.href='#about'; scrollTo()">Start</button>
+        </div>
+      </div>
+  
+
+    <section id="about">
+      <div class="container" style="margin-top: 10vh;">
+        <div class="row">
+          <div class="col">
+            <img id="chatbot" src="assets/gif/working.gif" alt="" />
+          </div>
+          <div class="col-sm-9 col-xs-12">
+            <div class="nes-balloon from-left">
+              <p style="color: #8583f7">Hi! I am Sai Hemanth, a Computer Science undergrad at BITS Pilani, Hyderabad Campus.</p>
+                <p>I have a passion for learning new skills and applying them to solve real-world problems.</p><p> I enjoy exploring different domains of computer science, such as artificial intelligence, web development, data science, and more.</p>
+                <p>I like to add a creative twist to mundane problems.</p>  
+                <p>I am always open to new challenges and opportunities to grow as a professional and as a person.</p>
+                <button type="button" class="nes-btn is-primary" onclick="window.location.href='#navigator'; scrollTo()">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigator section -->
+    <section id="navigator">
+      <div class="col">
+        <img id="bino_gif" src="assets/gif/bino.gif" alt="" />
+      </div>
+      <div class="col">
+        <div id="buttons" class="nes-container with-title "> 
+          <p class="title"><i class="snes-logo"></i>  Navigator</p>
+          <button class="nes-btn is-blue" onclick="window.location.href='#ed_container'; scrollTo()">Education</button>
+          <button class="nes-btn is-green" onclick="window.location.href='#projects_container'; scrollTo()">Projects</button>
+          <button class="nes-btn is-red" onclick="window.location.href='#work_container'; scrollTo()">Work Experience</button>
+          <button class="nes-btn is-blue" onclick="window.location.href='#skill_container'; scrollTo()">Skills</button>
+          <button class="nes-btn is-green" onclick="window.location.href='#contact_container'; scrollTo()">Contact</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <div class="container" id="ed_container">
+      <div class="row">
+        <div class="nes-container with-title " id="education">
+          <p class="title">Education</p>
+          <div class="col" style="display: flex; align-items: center;">
+            <img id="timeline_gif" src="assets/gif/timeline.gif" alt="" />
+            <ul class="nes-list is-disc">
+                <b><p style="color: blue !important">* 2020 - 2024:</p> Birla Institute of Technology and Science Pilani, Hyderabad
+                  Campus</b>
+              <ul class="nes-list is-circle">
+                <li>B.E. Computer Science</li>
+              </ul>
+              <br />
+              <b><p style="color: blue !important">* 2018 - 2020:</p> Sri Chaitanya PU & CBSE College</b>
+              <ul class="nes-list is-circle">
+                <li>Senior Secondary</li>
+                <li>Grade: 95.6%</li>
+              </ul>
+              <br />
+              <b><p style="color: blue !important">* 2008- 2018:</p> Presidency School Bangalore South</b>
+              <ul class="nes-list is-circle">
+                <li>Primary and High School</li>
+                <li>Grade: 92.8%</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Work Experience -->
+    <div class="container" id="work_container">
+      <div class="row">
+        <div class="nes-container with-title " id="work_experience">
+          <p class="title">Work Experience</p>
+          <div class="col" style="display: flex; align-items: center;">
+            <img id="timeline_gif" src="assets/gif/timeline.gif" alt="" />
+            <ul class="nes-list is-disc">
+              <b><p style="color: blue !important">* June 2023 - August 2023: Intern</p><h3>Infipost</h3></b>
+                <p>* Solely responsible for developing and maintaining the company's website: <a style="color: purple" href="https://infiposts.in" target="_blank">infiposts.in</a><br></p>
+                <p>* Collaborated closely with the CEO on various non-development sides too such as conducting market research, discussing
+                  product strategy and conducting promotional events on platforms such as Unstop.<br></p>
+                <p>* Collaborated with the mobile app team to design UI, test features, debug issues, and integrate APIs.
+                <br></p>
+                <p>* Used: HTML, CSS, JS, Bootstrap, React Native, Atlassian Jira, FastAPI</p>
+              <br />
+              <b><p style="color: blue !important">* May 2022 - July 2022: Web Developer Intern</p><h3>Swecha Org.</h3></b>
+                <p>* Added multi-screen share feature to Swecha Web Conferencing, a fork of BigBlueButton<br></p>
+                <p>* As a team lead, developed various soft skills as the sole POC between team and Product Owner.<br></p>
+                <p>* Used: React.js, Penpot, Git, Docker Compose, BigBlueButton</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="skill_container">
+      <!-- Skills section -->
+      <div id="skills" class="nes-container with-title is-dark"> <!-- Add id attribute -->
+        <p class="title">Skills</p>
+        <ul class="nes-list is-disc">
+          <li><p style="color: white">Programming Languages:</p> C, C++, Python, Java, JavaScript</li>
+          <li><p style="color: white">Machine Learning:</p> Scikit-Learn, Keras, Tensorflow</li>
+          <li><p style="color: white">Web Development:</p> HTML, CSS, MongoDB, ExpressJS, ReactJS, NodeJS, BootStrap</li>
+          <li><p style="color: white">Courses:</p> Object Oriented Programming, DataBase Management Systems, Software Engineering, Machine Learning,
+Foundations of Data Science, Parallel Computing, Operating Systems, Data Structures and Algorithms, Principles
+of Management</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container" id="projects_container">
+      <!-- outer container -->
+      <div class = "nes-container with-title">
+        <span class="title">Projects</span>
+        <div id="projects" class="nes-container with-title is-dark"> <!-- Add id attribute -->
+          <p class="title">Formal Project</p>
+            <p style="color: white">Ongoing: Development and Evaluation of a Business Intelligence Dashboard Design Assistant:</p>
+            <p>* Conducting research on applying Artificial Intelligence techniques for automating Data Visualization in PowerBI.<br></p>
+            <p>* Working on a research publication under the guidance of <a style="color: purple" href="https://universe.bits-pilani.ac.in/hyderabad/narasimhabolloju/Profile" target="_blank">Prof. Narasimha Bolloju</a>.</p>
+        </div>
+
+        <div id="projects" class="nes-container with-title is-dark"> <!-- Add id attribute -->
+          <p class="title">Front-End</p>
+            <p style="color: white">Loka Laboratories Website</p>
+            <p>* Designed and developed the official website for Loka Laboratories, a BITS Pilani Tech Incubator start-up.<br></p>
+            <p>* Visit the website: <a style="color: purple" href="https://lokalabs.netlify.app" target="_blank">Loka Labs</a>.</p>
+        </div>
+
+        <div id="projects" class="nes-container with-title is-dark"> <!-- Add id attribute -->
+          <p class="title">Web Development</p>
+            <p style="color: white">Sahara: E-Commerce Website</p>
+            <p>* An E-commerce web application developed as part of Database Systems course, to develop an understanding of
+              Relational Databases.<br></p>
+            <p>* Have a look: <a style="color: purple" href="https://github.com/SETRAZ/Sahara" target="_blank">Github Link</a>.</p>
+        </div>
+
+        <div id="projects" class="nes-container with-title is-dark"> <!-- Add id attribute -->
+          <p class="title">Deep Learning</p>
+            <p style="color: white">Image Classification</p>
+            <p>* Developed a handwritten digits classifier on the MNIST dataset.<br></p>
+            <p>* Experimented with different architectures of Convolutional Neural Networks to find the optimal network, and achieved an
+              accuracy of 0.97.<br></p>
+            <p>* Have a look: <a style="color: purple" href="https://github.com/SETRAZ/Image-Classification" target="_blank">Github Link</a>.</p>
+        </div>
+
+        <div id="projects" class="nes-container with-title is-dark"> <!-- Add id attribute -->
+          <p class="title">Machine Learning</p>
+            <p style="color: white">Regression Model: Application Energy Usage</p>
+            <p>* Built a Regression model to predict Application Energy Usage using various attributes such as
+              temperatures, relative humidity, wind speed, visibility, etc.<br></p>
+            <p>* Have a look: <a style="color: purple" href="https://github.com/SETRAZ/Principal-Component-Analysis" target="_blank">Github Link</a>.</p>
+        </div>
+
+        <div id="projects" class="nes-container with-title is-dark"> <!-- Add id attribute -->
+          <p class="title">Compiler Design</p>
+            <p style="color: white">Basic-C Simulator</p>
+            <p>* Built a Simulator and Parse Tree generator for a simpler version of the C language, which supports
+              integer constants, variables, expressions, assignments, for loops, and read and write
+              statements.<br></p>
+            <p>* Have a look: <a style="color: purple" href="https://github.com/SETRAZ/Basic-C" target="_blank">Github Link</a>.</p>
+        </div>
+
+        <div id="projects" class="nes-container with-title is-dark"> <!-- Add id attribute -->
+          <p class="title">Web Development</p>
+            <p style="color: white">AutoPARK</p>
+            <p>* Built an Automobile Parking System to help reduce parking crowd and ease access to various commercial buildings.<br></p>
+            <p>* Have a look: <a style="color: purple" href="https://github.com/SETRAZ/ParkingSlot" target="_blank">Github Link</a>.</p>
+        </div>
+
+        <div id="projects" class="nes-container with-title is-dark"> <!-- Add id attribute -->
+          <p class="title">Data Structures</p>
+            <p style="color: white">Knight's Travails</p>
+            <p>* An Algorithm to show the shortest possible path that a knight can take to take down a target chess piece, in an N x N chessboard, with restrictions set by the player.<br></p>
+            <p>* Have a look: <a style="color: purple" href="https://github.com/SETRAZ/A-Knights-Travails" target="_blank">Github Link</a>.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container" id="contact_container">
+      <!-- contacts section -->
+      <div class="nes-container with-title" id="contact">
+        <span class="title">Contact me</span>
+        <div>
+          <a href="https://www.linkedin.com/in/sai-hemanth-ananthoju" target="_blank">
+            <i class="nes-icon linkedin"></i>
+          </a>
+          <a href="https://m.facebook.com/people/Sai-Hemanth-Ananthoju/100010101768722/" target="_blank">
+            <i class="nes-icon facebook"></i>
+          </a>
+          <a href="https://github.com/SETRAZ" target="_blank">
+            <i class="nes-icon github"></i>
+          </a>
+          <a href="mailto:saihemantha02@gmail.com" target="_blank">
+            <i class="nes-icon gmail"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nes-container with-title" id="footer">
+      <span class="title">P.S.</span>
+      STILL A WORK IN PROGRESS! <br>
+      Made with <i class="nes-icon is-small heart"></i> by Sai Hemanth
+    </div>
+
+    <button type="button" class="nes-btn is-success" id="back-btn"  onclick="scrollTo()" href="#navigator">
+      <span class="material-symbols-outlined">
+        arrow_upward
+      </span>
+    </button>
+    <script>
+      var navOffset = $("#navigator").offset().top;
+      var backBtn = $("#back-btn");
+      function checkScroll() {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > navOffset) {
+          backBtn.fadeIn("slow"); 
+        }
+        else {
+          backBtn.fadeOut("slow"); 
+        }
+      }
+      function scrollTo() {
+        $("html, body").animate({ scrollTop: navOffset }, "fast");
+      }
+      $(window).scroll(checkScroll);
+      backBtn.click(scrollTo);
+    </script>
+      
+    <div id="preloader"></div>
+    <script>
+    let preloader = document.getElementById("preloader");
+      if (preloader) {
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 3000);
+      }
+    </script>
+
+    <audio id="bg-music" autoplay loop>
+      <source src="assets/audio/bg_audio_2.mp3" type="audio/mp3">
+      <source src="assets/audio/bg_audio_2.wav" type="audio/wav">
+      <source src="assets/audio/bg_audio_2.ogg" type="audio/ogg">
+    </audio>
+
+    <button type="button" class="nes-btn is-primary" id="speaker"><span class="material-symbols-outlined" id="icon">
+      volume_up
+    </span>
+    </button>
+    <!-- AUDIO -->
+    <script>     
+        var button = document.getElementById("speaker"); 
+        var audio = document.getElementById("bg-music"); 
+        var icon = document.getElementById("icon"); 
+        var v_gif = document.getElementById("v");
+
+        button.addEventListener("click", function() { 
+          if (icon.innerHTML == "volume_up") { 
+            icon.innerHTML = "volume_off"; 
+            audio.muted = true;
+            v_gif.src = "assets/gif/V.gif";
+          } else { 
+            icon.innerHTML = "volume_up"; 
+            audio.muted = false;
+            v_gif.src = "assets/gif/V_music.gif";
+          }
+        });
+    </script>
+  </body>
+</html>
