@@ -31,7 +31,7 @@
           rgba(255, 255, 255, 0.75),
           rgba(255, 255, 255, 0.75)
         ),
-        url(assets/images/background4.gif);
+        url(assets/gif/background_2.gif);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
@@ -304,9 +304,8 @@ of Management</li>
 
     <audio id="bg-music" autoplay loop>
       <source src="assets/audio/bg_audio_2.mp3" type="audio/mp3">
-      <source src="assets/audio/bg_audio_2.wav" type="audio/wav">
       <source src="assets/audio/bg_audio_2.ogg" type="audio/ogg">
-        <p>If you're reading this, your browser does not support audio :( </p>
+      <p>If you're reading this, your browser does not support audio :( </p>
     </audio>
 
     <button type="button" class="nes-btn is-primary" id="speaker"><span class="material-symbols-outlined" id="icon">
@@ -323,12 +322,12 @@ of Management</li>
         button.addEventListener("click", function() { 
           if (icon.innerHTML == "volume_up") { 
             icon.innerHTML = "volume_off"; 
-            audio.muted = true;
+            audio.pause();
             console.log("muted");
             v_gif.src = "assets/gif/V.gif";
           } else { 
             icon.innerHTML = "volume_up"; 
-            audio.muted = false;
+            audio.play();
             console.log("unmuted");
             v_gif.src = "assets/gif/V_music.gif";
           }
